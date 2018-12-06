@@ -14,10 +14,13 @@ import csv
 import operator
 
 #set file path
-csvpath = os.path.join("..", "/Users/sghosh/Documents/Suv/Personal/Berkeley/python-challenge/PyPoll", "election_data.csv")
+#csvpath = os.path.join("..", "/Users/sghosh/Documents/Suv/Personal/Berkeley/python-challenge/PyPoll", "election_data.csv")
+csvpath = os.path.join(os.path.sep,"Users", "sghosh", "Documents", "Suv", "Personal", "Berkeley", "python-challenge", "PyPoll", "election_data.csv")
 
 #set output .txt file
-outputpath = "/Users/sghosh/Documents/Suv/Personal/Berkeley/python-challenge/PyPoll/election_result.txt"
+#outputpath = "/Users/sghosh/Documents/Suv/Personal/Berkeley/python-challenge/PyPoll/election_result.txt"
+
+outputpath = os.path.join(os.path.sep,"Users", "sghosh", "Documents", "Suv", "Personal", "Berkeley", "python-challenge", "PyPoll", "election_result.txt")
 
 filewrite = open(outputpath,"w") 
 

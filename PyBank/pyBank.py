@@ -12,9 +12,9 @@
 import os
 import csv
 #set file path
-csvpath = os.path.join("..", "/Users/sghosh/Documents/Suv/Personal/Berkeley/python-challenge/PyBank", "budget_data.csv")
+#csvpath = os.path.join("..", "/Users/sghosh/Documents/Suv/Personal/Berkeley/python-challenge/PyBank", "budget_data.csv")
 
-
+csvpath = os.path.join(os.path.sep, "Users", "sghosh", "Documents", "Suv", "Personal", "Berkeley", "python-challenge", "PyBank", "budget_data.csv")
 
 total = 0
 tot_change = 0
