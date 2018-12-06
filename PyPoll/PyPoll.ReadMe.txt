@@ -1,0 +1,26 @@
+Author : Suvrangshu Ghosh
+election.py
+
+Input file : /Users/sghosh/Documents/Suv/Personal/Berkeley/python-challenge/PyPoll/election_data.csv
+
+Output :
+
+
+Election Results
+_______________
+
+
+Total Votes : 3521001
+_____________________
+
+
+Correy  :  20.0 % 704200
+Khan    :  63.0 % 2218231
+Li      :  14.0 % 492940
+O'Tooley  :  3.0 % 105630
+
+
+_______________
+
+Winner : Khan
+_______________
