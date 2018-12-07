@@ -34,7 +34,7 @@ change = 0
 vote = 0
 voteprcnt = 00.00
 candt = " "
-PL_list = []
+#PL_list = []
 writetxt = " " 
 #-----------------------------------------
 
@@ -79,7 +79,8 @@ with open(csvpath, newline='') as csvfile:
 				#calculate % of vote - (vote/total)* 100
 				voteprcnt = (vote/totline) * 100
 				voteprcnt = round(voteprcnt, 2)
-				print(old_cndt, " : ", str(voteprcnt) + " % " + str(vote))
+				#print(old_cndt, " : ", str(voteprcnt) + " % " + str(vote))
+				print(f"{old_cndt} : {str(voteprcnt)}% ({str(vote)})")
 				writetxt = f"{old_cndt} : {str(voteprcnt)}% {str(vote)}"
 				filewrite.write(writetxt + '\n') 
 				cantot = vote #Move total votes of a candidate
@@ -96,7 +97,8 @@ with open(csvpath, newline='') as csvfile:
 			if count == (totline -1): # last row
 				voteprcnt = (vote/totline) * 100
 				voteprcnt = round(voteprcnt, 2)
-				print(rows[2], " : ", str(voteprcnt) + " % " + str(vote))
+				#print(rows[2], " : ", str(voteprcnt) + " % " + "(" + str(vote)+")")
+				print(f"{rows[2]} : {str(voteprcnt)}% ({str(vote)})")
 				writetxt = f"{rows[2]} : {str(voteprcnt)}% {str(vote)}"
 				filewrite.write(writetxt + '\n')
 				cantot = vote #Move total votes of a candidate
@@ -113,6 +115,8 @@ writetxt = f"Winner : {winner}"
 filewrite.write(writetxt + '\n')
 
 filewrite.close()#close file
+
+
 
 #------------------------------------------
 

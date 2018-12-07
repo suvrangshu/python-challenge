@@ -28,7 +28,7 @@ min_change_month = " "
 change = 0
 PL_list = []
 
-#get the list od rows in the csv file
+#get the list of rows in the csv file
 file = open(csvpath)
 numline = len(file.readlines())
 #print("Number of rows in the file = " + str(numline))
